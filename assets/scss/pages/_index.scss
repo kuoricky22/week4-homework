@@ -1,3 +1,286 @@
-.index-title {
-  font-size: 100px;
+.btn-lg {
+  font-size: $font-size-base;
+  padding: 16px 176px;
+}
+.btn-sm {
+  font-size: $font-size-2;
+  padding: 6px 12px;
+}
+
+// 按鈕
+.btn {
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  background-color: #aa0601;
+}
+.btn-lg {
+  font-size: $font-size-base;
+  padding: 16px 176px;
+}
+.btn-sm {
+  font-size: $font-size-2;
+  padding: 6px 12px;
+}
+
+// 首頁【段落】
+.section-padding {
+  padding: 80px 0px;
+}
+
+.section-title {
+  color: #650300;
+  text-align: center;
+  font-size: $font-size-5;
+  font-weight: bold;
+}
+
+.jumbotron {
+  text-align: right;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true")
+    no-repeat center / cover;
+}
+
+// 商品種類名稱
+.product-type-name {
+  color: #aa0601;
+  font-size: $font-size-5;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.motoo {
+  padding: 296px 0px;
+  color: #650300;
+  h1 {
+    margin-bottom: 4px;
+    font-size: $font-size-6;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: $font-size-4;
+  }
+}
+
+.services {
+  margin-top: 24px;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  .service-content {
+    flex-basis: 306px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .service-icon {
+      width: 100px;
+      margin-bottom: 16px;
+    }
+
+    h4 {
+      color: #650300;
+      font-size: $font-size-3;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+  }
+}
+.classises {
+  gap: 24px;
+  .classis-content {
+    margin-top: 48px;
+    width: 416px;
+    text-align: center;
+
+    .classis-sample-img {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.special-bg-img {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true")
+    no-repeat center / cover;
+  .section-title {
+    color: #ffffff;
+  }
+
+  .special-content {
+    margin-top: 48px;
+    text-align: center;
+    background-color: #ffffff;
+    .special {
+      display: block;
+      width: 648px;
+      height: 240px;
+    }
+  }
+
+  .special-content:first-child .sample-img {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true")
+      no-repeat center / cover;
+  }
+  .special-content:last-child .sample-img {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true")
+      no-repeat center / cover;
+  }
+}
+
+.recommend {
+  flex-wrap: wrap;
+  gap: 24px;
+
+  .recommend-card {
+    width: 306px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 4px;
+    .recommend-content {
+      padding: 16px;
+      small {
+        color: #707070;
+        font-size: 14px;
+      }
+    }
+    .recommend-content p:nth-child(2) {
+      margin-top: 8px;
+      margin-bottom: 72px;
+    }
+  }
+}
+
+.contact-content {
+  max-width: 576px;
+  margin: 0 auto;
+  margin-top: 48px;
+  text-align: center;
+  form,
+  p {
+    text-align: left;
+  }
+  form {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  .form-group {
+    margin-bottom: 16px;
+    label {
+      margin-bottom: 8px;
+    }
+    input[type="text"] {
+      padding: 6px 12px;
+      border: 1px solid #000;
+      background-color: transparent;
+    }
+    input[type="checkbox"] {
+      display: inline-block;
+      width: 16px;
+      margin: 0;
+      margin-right: 4px;
+      background-color: #fbf2f2;
+    }
+    textarea {
+      height: 136px;
+      background-color: transparent;
+    }
+    p {
+      display: inline-block;
+      width: calc(100% - 16px);
+    }
+  }
+}
+
+@include pad {
+  .btn-lg {
+    padding: 16px 136px;
+  }
+
+  .jumbotron {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true")
+      no-repeat center / cover;
+  }
+  .classises {
+    flex-direction: column;
+    .classis-content {
+      width: 336px;
+    }
+  }
+  .specials {
+    flex-direction: column;
+  }
+
+  .service-content {
+    flex-basis: 336px;
+  }
+  .special {
+    display: block;
+    width: 696px;
+  }
+}
+@include mobile {
+  .btn-lg {
+    padding: 16px 139px;
+  }
+
+  .section-padding {
+    padding: 40px 0px;
+  }
+
+  .section-title {
+    font-size: $font-size-3;
+  }
+
+  .motoo {
+    padding: 144px 0px;
+    h1 {
+      margin-bottom: 8px;
+      font-size: $font-size-3;
+    }
+    h2 {
+      font-size: $font-size-base;
+    }
+  }
+
+  .service-content {
+    flex-basis: 336px;
+  }
+  .special-bg-img {
+    .special-content {
+      .special {
+        display: block;
+        width: 348px;
+      }
+    }
+    .special-content:first-child .sample-img {
+      background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true")
+        no-repeat center / cover;
+    }
+    .special-content:last-child .sample-img {
+      background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true")
+        no-repeat center / cover;
+    }
+  }
+
+  .recommend-card {
+    flex-basis: 348px;
+  }
+
+  .contact-content {
+    max-width: 348px;
+    margin-top: 24px;
+    form {
+      margin-bottom: 24px;
+    }
+    .form-group {
+      input[type="checkbox"] {
+        margin-top: 6px;
+      }
+    }
+    .form-group:last-child {
+      align-items: flex-start;
+    }
+  }
 }

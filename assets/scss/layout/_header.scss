@@ -1,4 +1,35 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar-logo {
+  width: 80px;
+}
+.navbar-list {
+  gap: 64px;
+}
+.navbar-list-mb {
+  display: none;
+}
+@include mobile {
+  .navbar-logo {
+    display: block;
+  }
+  .navbar-list {
+    display: none;
+  }
+  .navbar-list-mb {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navbar-item {
+    width: 50%;
+    text-align: center;
+    border: 1px solid #ffffff;
+  }
+  .navbar-item a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+  .navbar-item a:hover {
+    color: #000;
+    background-color: #ffffff;
+  }
 }

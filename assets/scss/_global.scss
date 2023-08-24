@@ -1,0 +1,84 @@
+.container {
+  max-width: 1296px;
+  margin: auto;
+}
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+// 底色
+.bg-cream {
+  background-color: $color-white;
+}
+
+.bg-brick {
+  background-color: $color-light-red;
+}
+
+.page-margin-top {
+  margin-top: 96px;
+}
+
+.page-margin-bottom {
+  margin-bottom: 80px;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+// 頁面主題
+.page-title {
+  margin-bottom: 32px;
+  padding-left: 16px;
+  border-left: 8px solid $color-red;
+  font-size: $font-size-5;
+  font-weight: bold;
+}
+
+@include pad {
+  .container {
+    max-width: 696px;
+  }
+
+  .page-margin-top {
+    margin-top: 80px;
+  }
+}
+@include mobile {
+  .container {
+    max-width: 348px;
+  }
+
+  .page-margin-top {
+    margin-top: 40px;
+  }
+
+  .page-margin-bottom {
+    margin-bottom: 64px;
+  }
+
+  .page-title {
+    font-size: $font-size-3;
+  }
+}

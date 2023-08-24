@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: 1.5;
+  font-size: $font-size-base;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+nav {
+  padding: 25px 0;
+}
+
+footer {
+  color: $color-light-white;
+}
+
+@include mobile {
+  nav {
+    flex-wrap: wrap;
+  }
+}
